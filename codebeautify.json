@@ -1,0 +1,424 @@
+﻿{
+	"openapi": "3.0.0",
+	"info": {
+		"description": "This specification provides sample API for using GREEN ENERGY TOKEN API",
+		"version": "1.0.0",
+		"title": "API for GREEN ENERGY TOKEN"
+	},
+	"servers": [
+		{
+			"url": "http://169.38.75.254:8080/",
+			"description": "server"
+		},
+		{
+			"url": "http://localhost:8080/",
+			"description": "local-testing"
+		}
+	],
+	"components": {
+		"securitySchemes": {
+			"bearerAuth": {
+				"type": "http",
+				"scheme": "bearer",
+				"bearerFormat": "JWT"
+			}
+		}
+	},
+	"paths": {
+		"/login": {
+			"post": {
+				"tags": [
+					"Authentication"
+				],
+				"summary": "User Login API",
+				"description": "Verify username and password and returns tokenID",
+				"requestBody": {
+					"description": "Request details",
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"username": {
+										"type": "string",
+										"description": "User Name",
+										"example": "yuna"
+									},
+									"password": {
+										"type": "string",
+										"description": "Password",
+										"example": "yuna"
+									}
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Success user logged in successfully",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"code": {
+											"type": "int",
+											"description": "code Response Message",
+											"example": 200
+										},
+										"expire": {
+											"type": "string",
+											"description": "time of the token expire",
+											"example": "2021-06-06T10:46:03Z"
+										},
+										"token": {
+											"type": "string",
+											"description": "token id",
+											"example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjI5NzYzNjMsImlkIjoieXVuYSIsIm9yaWdfaWF0IjoxNjIyOTcyNzYzfQ.Use6ZZum7y-q5ZchWuvvDioyihpTTUZqCRGnTcnHBdI"
+										}
+									}
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Unauthorized"
+					},
+					"500": {
+						"description": "Internal Server Error."
+					}
+				}
+			}
+		},
+		"/token/mint": {
+			"post": {
+				"security": [
+					{
+						"bearerAuth": []
+					}
+				],
+				"tags": [
+					"Token Usecase"
+				],
+				"summary": "Token Mitting API",
+				"description": "submit xls file for token issue",
+				"requestBody": {
+					"required": true,
+					"content": {
+						"multipart/form-data": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"File": {
+										"type": "string",
+										"format": "binary",
+										"description": "File to be uploaded"
+									}
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "File Uploaded successfully",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"message": {
+											"type": "string",
+											"description": "Response Message",
+											"example": "Token Minted successful"
+										},
+										"code": {
+											"type": "int",
+											"description": "Response code",
+											"example": 200
+										},
+										"response": {
+											"type": "string",
+											"description": "Response output",
+											"example": null
+										}
+									}
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Token Expired."
+					},
+					"500": {
+						"description": "Internal Server Error."
+					}
+				}
+			}
+		},
+		"/token/transfer": {
+			"post": {
+				"security": [
+					{
+						"bearerAuth": []
+					}
+				],
+				"tags": [
+					"Token Usecase"
+				],
+				"summary": "Token Transfer",
+				"description": "submit recipient, TokenType for Token Transfer",
+				"requestBody": {
+					"description": "Request details",
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"recipient": {
+										"type": "string",
+										"description": "Receiver Name",
+										"example": "ren"
+									},
+									"type": {
+										"type": "array",
+										"description": "TokenType input",
+										"example": null
+									}
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Token Tranfered successfully",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"message": {
+											"type": "string",
+											"description": "Response Message",
+											"example": "Token Transferred successful"
+										},
+										"code": {
+											"type": "int",
+											"description": "Response code",
+											"example": 200
+										},
+										"response": {
+											"type": "string",
+											"description": "Response output",
+											"example": null
+										}
+									}
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Invalid\\Missing Fields"
+					},
+					"401": {
+						"description": "Token Expired."
+					},
+					"500": {
+						"description": "Internal Server Error."
+					}
+				}
+			}
+		},
+		"/token/burn": {
+			"post": {
+				"security": [
+					{
+						"bearerAuth": []
+					}
+				],
+				"tags": [
+					"Token Usecase"
+				],
+				"summary": "Token Burn",
+				"description": "submit TokenType for Token Burn",
+				"requestBody": {
+					"description": "Request details",
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"type": "array",
+										"description": "TokenType",
+										"example": null
+									}
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Token Burnt successfully",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"message": {
+											"type": "string",
+											"description": "Response Message",
+											"example": "Token Burnt successful"
+										},
+										"code": {
+											"type": "int",
+											"description": "Response code",
+											"example": 200
+										},
+										"response": {
+											"type": "string",
+											"description": "Response output",
+											"example": null
+										}
+									}
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Invalid\\Missing Fields"
+					},
+					"401": {
+						"description": "Token Expired."
+					},
+					"500": {
+						"description": "Internal Server Error."
+					}
+				}
+			}
+		},
+		"/token/list": {
+			"get": {
+				"security": [
+					{
+						"bearerAuth": []
+					}
+				],
+				"tags": [
+					"Vault Query"
+				],
+				"summary": "Query All Tokens",
+				"description": "List all the token present in the user ledger vault",
+				"requestBody": {
+					"description": "Request details",
+					"required": false
+				},
+				"responses": {
+					"200": {
+						"description": "Vault Queried successfully",
+						"content": {
+							"application/json": {
+								"schema": null,
+								"example": {
+									"balance": [
+										{
+											"Type": "{\"siteId\":\"IN86342568\",\"generationKind\":\"Solar\",\"gridConnectionID\":\"SLR3487546\",\"date\":\"2021-06-03T09:30:00+05:30\",\"ptu\":\"10\",\"unit\":\"kw\",\"mintDate\":\"2021-06-07\"}",
+											"Quantity": 1900
+										},
+										{
+											"Type": "{\"siteId\":\"IN86342568\",\"generationKind\":\"Solar\",\"gridConnectionID\":\"SLR3487546\",\"date\":\"2021-06-03T09:30:00+05:30\",\"ptu\":\"10\",\"unit\":\"kw\",\"mintDate\":\"2021-06-07\"}",
+											"Quantity": 1900
+										}
+									],
+									"code": 200
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Token Expired."
+					},
+					"500": {
+						"description": "Internal Server Error."
+					}
+				}
+			}
+		},
+		"/token/marketlist": {
+			"get": {
+				"security": [
+					{
+						"bearerAuth": []
+					}
+				],
+				"tags": [
+					"Vault Query"
+				],
+				"summary": "Vault Query for All Marketplace token",
+				"description": "Vault Query for All Marketplace token",
+				"requestBody": {
+					"description": "Request details",
+					"required": false
+				},
+				"responses": {
+					"200": {
+						"description": "Vault Queried successfully",
+						"content": {
+							"application/json": {
+								"schema": null,
+								"example": {
+									"code": 200,
+									"message": "Json was Parsed and committed successfully",
+									"response": [
+										{
+											"co2emission": "10",
+											"date": "2020-05-22T00:00:00+09:00",
+											"expirationdate": "2022-06-10",
+											"generationkind": "Water",
+											"gridconnectionid": "HYB3487546",
+											"mintdate\"": "2021-06-10",
+											"owner\"": "ryu",
+											"ptu\"": "12",
+											"siteid\"": "Osaka",
+											"status\"": "active",
+											"tokentype": "{\"siteId\":\"Osaka\",\"generationKind\":\"Water\",\"gridConnectionID\":\"HYB3487546\",\"date\":\"2020-05-22T00:00:00+09:00\",\"ptu\":\"12\",\"unit\":\"kw\",\"mintDate\":\"2021-06-10\",\"co2emission\":\"10\"}",
+											"unit": "kw",
+											"volume": 1620
+										},
+										{
+											"co2emission": "11",
+											"date": "2020-05-21T00:00:00+09:00",
+											"expirationdate": "2022-06-10",
+											"generationkind": "Water",
+											"gridconnectionid": "HYB3487546",
+											"mintdate\"": "2021-06-10",
+											"owner\"": "ryu",
+											"ptu\"": "13",
+											"siteid\"": "Osaka",
+											"status\"": "active",
+											"tokentype": "{\"siteId\":\"Osaka\",\"generationKind\":\"Water\",\"gridConnectionID\":\"HYB3487546\",\"date\":\"2020-05-21T00:00:00+09:00\",\"ptu\":\"13\",\"unit\":\"kw\",\"mintDate\":\"2021-06-10\",\"co2emission\":\"11\"}",
+											"unit": "kw",
+											"volume": 2300
+										}
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Token Expired."
+					},
+					"500": {
+						"description": "Internal Server Error."
+					}
+				}
+			}
+		}
+	}
+}
