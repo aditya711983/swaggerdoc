@@ -15,6 +15,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Check Existing Student for Sign up",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -68,6 +69,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Resend OTP",
         "responses": {
           "200": {
             "description": "Success"
@@ -80,6 +82,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Update Date of Birth and Email",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -116,6 +119,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Match OTP from User",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -152,6 +156,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Send OTP",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -188,6 +193,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Get User number to Send OTP",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -224,6 +230,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Create New User (Student)",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -277,6 +284,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Verify new created student (By OTP)",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -313,6 +321,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Student Login",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -366,6 +375,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Refresh token",
         "responses": {
           "200": {
             "description": "Success"
@@ -378,6 +388,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Verify Token",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -414,6 +425,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Request for new password",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -450,6 +462,7 @@
         "tags": [
           "Account"
         ],
+        "summary": "Reset Password",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -486,6 +499,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Create New Decoder",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -539,6 +553,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Verify Decoder Email",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -575,6 +590,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Create New User (Admin)",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -611,6 +627,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Verify Email (Admin)",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -647,6 +664,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "User with access",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -683,6 +701,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Get all users",
         "responses": {
           "200": {
             "description": "Success"
@@ -695,6 +714,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Assign access",
         "parameters": [
           {
             "name": "userId",
@@ -757,6 +777,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Decoder login",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -793,6 +814,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Request for new password (Admin)",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -829,6 +851,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Change password",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -865,6 +888,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Login (1st Super Admin)",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -901,6 +925,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Login (2nd Super Admin)",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -937,6 +962,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Get all role",
         "responses": {
           "200": {
             "description": "Success"
@@ -949,6 +975,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Create role (Super Admin)",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1021,6 +1048,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "User with roles",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1057,6 +1085,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "User access",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1093,6 +1122,7 @@
         "tags": [
           "Authenticate"
         ],
+        "summary": "Get all menus for dashboard",
         "responses": {
           "200": {
             "description": "Success"
@@ -1105,6 +1135,7 @@
         "tags": [
           "Bank"
         ],
+        "summary": "Get bank list",
         "responses": {
           "200": {
             "description": "Success",
@@ -1134,6 +1165,7 @@
         "tags": [
           "Bank"
         ],
+        "summary": "Get single bank",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1187,6 +1219,7 @@
         "tags": [
           "Bank"
         ],
+        "summary": "Create bank",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1240,6 +1273,7 @@
         "tags": [
           "Bank"
         ],
+        "summary": "Update existing bank",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1293,6 +1327,7 @@
         "tags": [
           "Bank"
         ],
+        "summary": "Delete existing bank",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1346,6 +1381,7 @@
         "tags": [
           "BarcodeAllocation"
         ],
+        "summary": "Create/Allocate Bar code",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1398,6 +1434,7 @@
         "tags": [
           "BarcodeAllocation"
         ],
+        "summary": "Update Allocated Bar code",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1450,6 +1487,7 @@
         "tags": [
           "BarcodeAllocation"
         ],
+        "summary": "Delete Allocated Bar Code",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1486,6 +1524,7 @@
         "tags": [
           "BarcodeAllocation"
         ],
+        "summary": "Get List of Data to Allocate Bar Code",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1522,6 +1561,7 @@
         "tags": [
           "BarcodeAllocation"
         ],
+        "summary": "Bar Code report student wise",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1558,6 +1598,7 @@
         "tags": [
           "BarcodeAllocation"
         ],
+        "summary": "Bar Code report subject wise",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1594,6 +1635,7 @@
         "tags": [
           "BarcodeCorrection"
         ],
+        "summary": "Get single reg no or exam roll for corrrection",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1630,6 +1672,7 @@
         "tags": [
           "BarcodeCorrection"
         ],
+        "summary": "Update single bar code",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1666,6 +1709,7 @@
         "tags": [
           "BarcodeSequence"
         ],
+        "summary": "Get max bar code",
         "responses": {
           "200": {
             "description": "Success"
@@ -1678,6 +1722,7 @@
         "tags": [
           "BarcodeSequence"
         ],
+        "summary": "Create bar code sequence",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1730,6 +1775,7 @@
         "tags": [
           "BarcodeSequence"
         ],
+        "summary": "Bar code sequence report for single session",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1766,6 +1812,7 @@
         "tags": [
           "BarcodeSequence"
         ],
+        "summary": "Bar code sequence report for all session",
         "responses": {
           "200": {
             "description": "Success"
@@ -1778,6 +1825,7 @@
         "tags": [
           "BoardUniversity"
         ],
+        "summary": "Get a single board university",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1831,6 +1879,7 @@
         "tags": [
           "BoardUniversity"
         ],
+        "summary": "Create board university",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1884,6 +1933,7 @@
         "tags": [
           "BoardUniversity"
         ],
+        "summary": "Update board university",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1937,6 +1987,7 @@
         "tags": [
           "BoardUniversity"
         ],
+        "summary": "Delete board university",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1990,6 +2041,7 @@
         "tags": [
           "Branch"
         ],
+        "summary": "Get all branches",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -2043,6 +2095,7 @@
         "tags": [
           "Branch"
         ],
+        "summary": "Get a branch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -2096,6 +2149,7 @@
         "tags": [
           "Branch"
         ],
+        "summary": "Create branch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -2149,6 +2203,7 @@
         "tags": [
           "Branch"
         ],
+        "summary": "Update branch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -2202,6 +2257,7 @@
         "tags": [
           "Branch"
         ],
+        "summary": "Delete branch",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -2255,6 +2311,7 @@
         "tags": [
           "CancelationFromExam"
         ],
+        "summary": "Get Student Cancelation Info",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -2308,6 +2365,7 @@
         "tags": [
           "CancelationFromExam"
         ],
+        "summary": "Create Student for Cancelation",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -2361,6 +2419,7 @@
         "tags": [
           "CancelationFromExam"
         ],
+        "summary": "Update Existing Student for Cancelation",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3078,6 +3137,7 @@
         "tags": [
           "ExamCentres"
         ],
+        "summary": "Get all exam centers",
         "responses": {
           "200": {
             "description": "Success",
@@ -3107,6 +3167,7 @@
         "tags": [
           "ExamCentres"
         ],
+        "summary": "Get buildings info by exam center",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3160,6 +3221,7 @@
         "tags": [
           "ExamCentres"
         ],
+        "summary": "Get exam center by center id",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3213,6 +3275,7 @@
         "tags": [
           "ExamCentres"
         ],
+        "summary": "Get exam center by center id",
         "responses": {
           "200": {
             "description": "Success",
@@ -3242,6 +3305,7 @@
         "tags": [
           "ExamCentres"
         ],
+        "summary": "Update exam center",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3295,6 +3359,7 @@
         "tags": [
           "ExamCentres"
         ],
+        "summary": "Create exam center",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3348,6 +3413,7 @@
         "tags": [
           "ExamCentres"
         ],
+        "summary": "Delete exam center",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3401,6 +3467,185 @@
         "tags": [
           "ExamLevels"
         ],
+        "summary": "Get all exam level",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ExamRegs/GetOldRollNumberAllocation2": {
+      "post": {
+        "tags": [
+          "ExamRegs"
+        ],
+        "summary": "Get Old RollNumber Allocation2",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamRegsControllerModel6"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamRegsControllerModel6"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamRegsControllerModel6"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamRegsControllerModel6"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ExamRegs/GetPreviewForRollNumberAllocation2": {
+      "post": {
+        "tags": [
+          "ExamRegs"
+        ],
+        "summary": "Get Preview For RollNumber Allocation2",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamRegsControllerModel6"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamRegsControllerModel6"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamRegsControllerModel6"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExamRegsControllerModel6"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ExamRegs/CreateRollNumberAllocation2": {
+      "post": {
+        "tags": [
+          "ExamRegs"
+        ],
+        "summary": "Create RollNumber Allocation2",
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ExamRegsControllerModel7"
+                },
+                "nullable": true
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ExamRegsControllerModel7"
+                },
+                "nullable": true
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ExamRegsControllerModel7"
+                },
+                "nullable": true
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ExamRegsControllerModel7"
+                },
+                "nullable": true
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success",
@@ -3483,6 +3728,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Get Grade Sheet For Individual",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3536,6 +3782,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Get ExamReg By Examlevel, Monthid, Sessionyear and Regno",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3589,6 +3836,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Get all ExamReg list",
         "responses": {
           "200": {
             "description": "Success",
@@ -3618,6 +3866,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Get ExamReg By Examlevel, Monthid, Sessionyear and Examcenid",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3671,6 +3920,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Update Exam Reg",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3724,6 +3974,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Create Exam Reg",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3777,6 +4028,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Delete Exam Reg",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3830,6 +4082,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Create Roll Number Allocation",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3883,6 +4136,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Get Roll Numbers For Roll Number Allocation",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3936,6 +4190,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Get Roll Number Allocation",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -3989,6 +4244,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Get Admit Card For One Student",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4042,6 +4298,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Get Admit Card For Selected Students",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4095,6 +4352,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Get Exam Attendance Sheet Report",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4148,6 +4406,7 @@
         "tags": [
           "ExamRegs"
         ],
+        "summary": "Get Statement Of Additional Sheet",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4201,6 +4460,7 @@
         "tags": [
           "ExamTimeSchedules"
         ],
+        "summary": "Get ExamTime Schedules By Examlevel Monthid and Sessionyear",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4254,6 +4514,7 @@
         "tags": [
           "ExamTimeSchedules"
         ],
+        "summary": "Get ExamTime Schedules By Examlevel, Monthid, Sessionyear and Subjectid",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4307,6 +4568,7 @@
         "tags": [
           "ExamTimeSchedules"
         ],
+        "summary": "Update ExamTime Schedule",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4360,6 +4622,7 @@
         "tags": [
           "ExamTimeSchedules"
         ],
+        "summary": "Create Multiple ExamTime Schedules",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4429,6 +4692,7 @@
         "tags": [
           "FirmEntry"
         ],
+        "summary": "All firm report",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4491,6 +4755,7 @@
         "tags": [
           "FirmEntry"
         ],
+        "summary": "Get All firms",
         "responses": {
           "200": {
             "description": "Success",
@@ -4529,6 +4794,7 @@
         "tags": [
           "FirmEntry"
         ],
+        "summary": "Get All firms by name",
         "parameters": [
           {
             "name": "fname",
@@ -4577,6 +4843,7 @@
         "tags": [
           "FirmEntry"
         ],
+        "summary": "All firm names",
         "responses": {
           "200": {
             "description": "Success",
@@ -4615,6 +4882,7 @@
         "tags": [
           "FirmEntry"
         ],
+        "summary": "Get All firms by type",
         "parameters": [
           {
             "name": "ftype",
@@ -4663,6 +4931,7 @@
         "tags": [
           "FirmEntry"
         ],
+        "summary": "Get single firm",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4716,6 +4985,7 @@
         "tags": [
           "FirmEntry"
         ],
+        "summary": "Get single firm name",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4769,6 +5039,7 @@
         "tags": [
           "FirmEntry"
         ],
+        "summary": "Firm create",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4805,6 +5076,7 @@
         "tags": [
           "FirmEntry"
         ],
+        "summary": "Firm Update",
         "parameters": [
           {
             "name": "FId",
@@ -4850,6 +5122,7 @@
         "tags": [
           "FirmEntry"
         ],
+        "summary": "Firm delete",
         "parameters": [
           {
             "name": "FId",
@@ -4873,6 +5146,7 @@
         "tags": [
           "FormFillup"
         ],
+        "summary": "Create Form Fill up data for Moodle",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4926,6 +5200,7 @@
         "tags": [
           "FormFillup"
         ],
+        "summary": "Get Form Fillup Data",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -4979,6 +5254,7 @@
         "tags": [
           "FormFillup"
         ],
+        "summary": "Get List Of Exam Forms To Approve",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5032,6 +5308,7 @@
         "tags": [
           "FormFillup"
         ],
+        "summary": "Get List Of Exam Forms Approved",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5085,6 +5362,7 @@
         "tags": [
           "FormFillup"
         ],
+        "summary": "Create Form fill up",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5138,6 +5416,7 @@
         "tags": [
           "FormFillup"
         ],
+        "summary": "Get Form Fillup Data After Submission",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5191,6 +5470,7 @@
         "tags": [
           "FormFillup"
         ],
+        "summary": "Get Form Fillup Data After Approval",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5244,6 +5524,7 @@
         "tags": [
           "FormFillup"
         ],
+        "summary": "Approve Form Fillup Data",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5297,6 +5578,7 @@
         "tags": [
           "FormFillup"
         ],
+        "summary": "Update Form Fillup Data After Approval",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5350,6 +5632,7 @@
         "tags": [
           "FormFillupAndExamRunningStatus"
         ],
+        "summary": "Get All Form Fillup And Exam Registration Status",
         "responses": {
           "200": {
             "description": "Success",
@@ -5379,6 +5662,7 @@
         "tags": [
           "FormFillupAndExamRunningStatus"
         ],
+        "summary": "Create Form Fillup And Exam Registration Status",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5432,6 +5716,7 @@
         "tags": [
           "FormFillupAndExamRunningStatus"
         ],
+        "summary": "Update Form Fillup And Exam Registration Status",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5485,6 +5770,7 @@
         "tags": [
           "FormFillupAndExamRunningStatus"
         ],
+        "summary": "Get Exam Running MonthId And SessionYear By ExamLevel",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5538,6 +5824,7 @@
         "tags": [
           "GradeDetails"
         ],
+        "summary": "Get All Grade Details",
         "responses": {
           "200": {
             "description": "Success",
@@ -5567,6 +5854,7 @@
         "tags": [
           "GradeDetails"
         ],
+        "summary": "Get Grade Details",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5620,6 +5908,7 @@
         "tags": [
           "GradeDetails"
         ],
+        "summary": "Create Grade Details",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5689,6 +5978,7 @@
         "tags": [
           "GradeDetails"
         ],
+        "summary": "Delete Grade Details",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5742,6 +6032,7 @@
         "tags": [
           "GradeSystems"
         ],
+        "summary": "Get All Grade System",
         "responses": {
           "200": {
             "description": "Success",
@@ -5771,6 +6062,7 @@
         "tags": [
           "GradeSystems"
         ],
+        "summary": "Get Grade Systems By Examlevel, Monthid, Sessionyear and Refno",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5824,6 +6116,7 @@
         "tags": [
           "GradeSystems"
         ],
+        "summary": "Get Grade Systems By Examlevel, Monthid, Sessionyear and Subid",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5877,6 +6170,7 @@
         "tags": [
           "GradeSystems"
         ],
+        "summary": "Create Grade Systems",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5930,6 +6224,7 @@
         "tags": [
           "GradeSystems"
         ],
+        "summary": "Delete Grade Systems",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -5983,6 +6278,7 @@
         "tags": [
           "GroupSubject"
         ],
+        "summary": "Get A Group Subject",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6036,6 +6332,7 @@
         "tags": [
           "GroupSubject"
         ],
+        "summary": "Create Group Subject",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6089,6 +6386,7 @@
         "tags": [
           "GroupSubject"
         ],
+        "summary": "Update Group Subject",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6142,6 +6440,7 @@
         "tags": [
           "GroupSubject"
         ],
+        "summary": "Delete Group Subject",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6195,6 +6494,7 @@
         "tags": [
           "Locations"
         ],
+        "summary": "Get All location list",
         "responses": {
           "200": {
             "description": "Success",
@@ -6224,6 +6524,7 @@
         "tags": [
           "Locations"
         ],
+        "summary": "Get location",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6277,6 +6578,7 @@
         "tags": [
           "Locations"
         ],
+        "summary": "Update Location",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6330,6 +6632,7 @@
         "tags": [
           "Locations"
         ],
+        "summary": "Create Location",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6383,6 +6686,7 @@
         "tags": [
           "Locations"
         ],
+        "summary": "Delete Location",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6436,6 +6740,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Get Candidate Search With Bar code Report",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6489,6 +6794,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Get check out of marks Report",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6542,6 +6848,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Get Grace Report",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6595,6 +6902,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Get null check Report",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6648,6 +6956,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Update Single marks edit",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6701,6 +7010,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Update Multiple Marks Edit",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6754,6 +7064,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Get Preview For Multiple Marks Edit",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6807,6 +7118,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Get Marks For Multiple Marks Edit",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6860,6 +7172,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Get Marks For Single Marks Edit",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6913,6 +7226,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Get All Subject Wise Marks",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -6966,6 +7280,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Get Subject Wise Marks",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7019,6 +7334,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Create Subject Wise Marks",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7072,6 +7388,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Update Subject Wise Marks",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7125,6 +7442,7 @@
         "tags": [
           "Marks"
         ],
+        "summary": "Create Subject Wise Marks with Grace",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7178,6 +7496,7 @@
         "tags": [
           "Member"
         ],
+        "summary": "All members list",
         "responses": {
           "200": {
             "description": "Success",
@@ -7216,6 +7535,7 @@
         "tags": [
           "Member"
         ],
+        "summary": "Get Member By Id",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7278,6 +7598,7 @@
         "tags": [
           "Member"
         ],
+        "summary": "Create Member",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7314,6 +7635,7 @@
         "tags": [
           "Member"
         ],
+        "summary": "Update Member",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7362,6 +7684,7 @@
         "tags": [
           "Principal"
         ],
+        "summary": "Get Principal",
         "parameters": [
           {
             "name": "FId",
@@ -7402,6 +7725,7 @@
         "tags": [
           "Principal"
         ],
+        "summary": "Get Max Prin Id",
         "responses": {
           "200": {
             "description": "Success",
@@ -7431,6 +7755,7 @@
         "tags": [
           "Principal"
         ],
+        "summary": "Get Principal by Id",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7484,6 +7809,7 @@
         "tags": [
           "Principal"
         ],
+        "summary": "Get Principal list by Firm Id",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7537,6 +7863,7 @@
         "tags": [
           "Principal"
         ],
+        "summary": "Get all Principal list report",
         "responses": {
           "200": {
             "description": "Success",
@@ -7566,6 +7893,7 @@
         "tags": [
           "Principal"
         ],
+        "summary": "Get Firm Name By Principal Name",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7619,6 +7947,7 @@
         "tags": [
           "Principal"
         ],
+        "summary": "Get Principal By EnrNo",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7672,6 +8001,7 @@
         "tags": [
           "Principal"
         ],
+        "summary": "Create Principal",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7725,6 +8055,7 @@
         "tags": [
           "Principal"
         ],
+        "summary": "Delete Principal",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7778,6 +8109,7 @@
         "tags": [
           "Principal"
         ],
+        "summary": "Update Principal",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7831,6 +8163,7 @@
         "tags": [
           "ResultLocks"
         ],
+        "summary": "Get All Result Lock",
         "responses": {
           "200": {
             "description": "Success",
@@ -7860,6 +8193,7 @@
         "tags": [
           "ResultLocks"
         ],
+        "summary": "Get Result Lock",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7913,6 +8247,7 @@
         "tags": [
           "ResultLocks"
         ],
+        "summary": "Update Result Lock",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -7966,6 +8301,7 @@
         "tags": [
           "ResultLocks"
         ],
+        "summary": "Create Result Lock",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8019,6 +8355,7 @@
         "tags": [
           "ResultLocks"
         ],
+        "summary": "Delete Result Lock",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8072,6 +8409,7 @@
         "tags": [
           "ResultWithheld"
         ],
+        "summary": "Get All Result Lock",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8108,6 +8446,7 @@
         "tags": [
           "ResultWithheld"
         ],
+        "summary": "Insert Result Withheld Info",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8144,6 +8483,7 @@
         "tags": [
           "ResultWithheld"
         ],
+        "summary": "Withheld Block Result",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8180,6 +8520,7 @@
         "tags": [
           "ResultWithheld"
         ],
+        "summary": "Result Withheld Report",
         "responses": {
           "200": {
             "description": "Success"
@@ -8204,6 +8545,7 @@
         "tags": [
           "Seatplans"
         ],
+        "summary": "Get Seat Plan By Examlevel, Monthid, Sessionyear and SubjectId",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8257,6 +8599,7 @@
         "tags": [
           "Seatplans"
         ],
+        "summary": "Get Seat Plan By Examlevel, Monthid, Sessionyear, Centerid and SubjectId",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8310,6 +8653,7 @@
         "tags": [
           "Seatplans"
         ],
+        "summary": "Get Seat Plan By Examlevel, Monthid, Sessionyear, Centerid, SubjectId and Room number",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8363,6 +8707,7 @@
         "tags": [
           "Seatplans"
         ],
+        "summary": "Get Seat Plan By Examlevel, Monthid, Sessionyear, Centerid, SubjectId and roll number",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8416,6 +8761,7 @@
         "tags": [
           "Seatplans"
         ],
+        "summary": "Create Seat Plan",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8485,6 +8831,7 @@
         "tags": [
           "Seatplans"
         ],
+        "summary": "Get Seat Label",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8538,6 +8885,7 @@
         "tags": [
           "SessionInfoes"
         ],
+        "summary": "Get All Session Information",
         "responses": {
           "200": {
             "description": "Success",
@@ -8567,6 +8915,7 @@
         "tags": [
           "SessionInfoes"
         ],
+        "summary": "Get single Session Information",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8620,6 +8969,7 @@
         "tags": [
           "SessionInfoes"
         ],
+        "summary": "Update Session Information",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8673,6 +9023,7 @@
         "tags": [
           "SessionInfoes"
         ],
+        "summary": "Create Session Information",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8726,6 +9077,7 @@
         "tags": [
           "SessionInfoes"
         ],
+        "summary": "Delete Session Information",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8774,11 +9126,42 @@
         }
       }
     },
+    "/api/v1/Signatures/GetAllSignature": {
+      "get": {
+        "tags": [
+          "Signatures"
+        ],
+        "summary": "Get All Signature",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/Signatures/GetSignature": {
       "post": {
         "tags": [
           "Signatures"
         ],
+        "summary": "Get Single Signature",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8832,6 +9215,7 @@
         "tags": [
           "Signatures"
         ],
+        "summary": "Create Signature",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8885,6 +9269,7 @@
         "tags": [
           "Signatures"
         ],
+        "summary": "Update Signature",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -8938,6 +9323,7 @@
         "tags": [
           "StudentArticleShipCancelation"
         ],
+        "summary": "All Cancel Student",
         "responses": {
           "200": {
             "description": "Success"
@@ -8950,6 +9336,7 @@
         "tags": [
           "StudentArticleShipCancelation"
         ],
+        "summary": "Student Info by Regno",
         "parameters": [
           {
             "name": "regno",
@@ -8972,6 +9359,7 @@
         "tags": [
           "StudentArticleShipCancelation"
         ],
+        "summary": "Insert article student cancelation info",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9008,6 +9396,7 @@
         "tags": [
           "StudentArticleShipCancelation"
         ],
+        "summary": "Withdraw article student cancelation info",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9044,6 +9433,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Get List Of Registered Student For Exam",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9097,6 +9487,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Get Students By Gender",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9150,6 +9541,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Get Students By Registration Date Range",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9203,6 +9595,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Get Students By Registration Date",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9256,6 +9649,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Get All Board University",
         "responses": {
           "200": {
             "description": "Success",
@@ -9285,6 +9679,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Get All Group Subject",
         "responses": {
           "200": {
             "description": "Success",
@@ -9314,6 +9709,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Get Student",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9367,6 +9763,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Create Student",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9420,6 +9817,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Update Student",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9473,6 +9871,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Update Student for Student",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9526,6 +9925,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Delete Student",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9579,6 +9979,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Get Pending Image Approvals",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9632,6 +10033,7 @@
         "tags": [
           "StudentRegistrationAndUpdate"
         ],
+        "summary": "Accept Image Approval",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9685,6 +10087,7 @@
         "tags": [
           "StudentType"
         ],
+        "summary": "All Type Student List",
         "responses": {
           "200": {
             "description": "Success",
@@ -9723,6 +10126,7 @@
         "tags": [
           "StudentType"
         ],
+        "summary": "Single Student Type",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9776,6 +10180,7 @@
         "tags": [
           "StudentType"
         ],
+        "summary": "Max Student type id",
         "responses": {
           "200": {
             "description": "Success"
@@ -9788,6 +10193,7 @@
         "tags": [
           "StudentType"
         ],
+        "summary": "Insert Student type",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9824,6 +10230,7 @@
         "tags": [
           "StudentType"
         ],
+        "summary": "Update Student type",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9860,6 +10267,7 @@
         "tags": [
           "StudentType"
         ],
+        "summary": "Delete Student type",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9896,6 +10304,7 @@
         "tags": [
           "StudentType"
         ],
+        "summary": "Student type Report",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -9932,6 +10341,7 @@
         "tags": [
           "Subjects"
         ],
+        "summary": "Get All Subject List",
         "responses": {
           "200": {
             "description": "Success",
@@ -9961,6 +10371,7 @@
         "tags": [
           "Subjects"
         ],
+        "summary": "Get All Subject List (Tree Format)",
         "responses": {
           "200": {
             "description": "Success",
@@ -9990,6 +10401,7 @@
         "tags": [
           "Subjects"
         ],
+        "summary": "Get All Examlevel List",
         "responses": {
           "200": {
             "description": "Success",
@@ -10019,6 +10431,7 @@
         "tags": [
           "Subjects"
         ],
+        "summary": "Get Subject List",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -10072,6 +10485,7 @@
         "tags": [
           "Subjects"
         ],
+        "summary": "Update Subject",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -10125,6 +10539,7 @@
         "tags": [
           "Subjects"
         ],
+        "summary": "Create Subject",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -10178,6 +10593,7 @@
         "tags": [
           "Subjects"
         ],
+        "summary": "Delete Subject",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -10231,6 +10647,7 @@
         "tags": [
           "Subjects"
         ],
+        "summary": "Get Subjects By Parent",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -10279,11 +10696,118 @@
         }
       }
     },
+    "/api/admin/v1/Tabulations/GTSSingle": {
+      "post": {
+        "tags": [
+          "Tabulations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TabulationsControllerModel88"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TabulationsControllerModel88"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TabulationsControllerModel88"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TabulationsControllerModel88"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/admin/v1/Tabulations/GTS": {
+      "post": {
+        "tags": [
+          "Tabulations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TabulationsControllerModel7"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TabulationsControllerModel7"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TabulationsControllerModel7"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TabulationsControllerModel7"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseDto2"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/admin/v1/Tabulations/CreateDecodeLog": {
       "post": {
         "tags": [
           "Tabulations"
         ],
+        "summary": "Create Decode Log",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -10337,6 +10861,7 @@
         "tags": [
           "Tabulations"
         ],
+        "summary": "Get Tabulation Sheet Report (All types depending on flag)",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -11984,6 +12509,70 @@
         },
         "additionalProperties": false
       },
+      "ExamRegsControllerModel6": {
+        "type": "object",
+        "properties": {
+          "examLevel": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "monthId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sessionYear": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "examcenId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "formNumberFrom": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "formNumberTo": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExamRegsControllerModel7": {
+        "type": "object",
+        "properties": {
+          "formNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "fName": {
+            "type": "string",
+            "nullable": true
+          },
+          "mName": {
+            "type": "string",
+            "nullable": true
+          },
+          "regNo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "examRollno": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "ExamRegsControllerModel24": {
         "type": "object",
         "properties": {
@@ -12195,36 +12784,6 @@
           "ccSession": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ExamRegsControllerModel6": {
-        "type": "object",
-        "properties": {
-          "examLevel": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "monthId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "sessionYear": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "examcenId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "formNumberFrom": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "formNumberTo": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -14982,6 +15541,148 @@
             "type": "integer",
             "format": "int32",
             "default": 0
+          }
+        },
+        "additionalProperties": false
+      },
+      "TabulationsControllerModel88": {
+        "type": "object",
+        "properties": {
+          "examLevel": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "monthId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sessionYear": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sortByRollNumberOrder": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sortByRegistrationNumberOrder": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sortByTotalMarksAchievedOrder": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "encodedTabulationSheetReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tabulationSheetWithNameReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "gradeSheetAllSubjectFailReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "candidateFailedBasedOnAttemptReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "candidateFailedBasedOnAttempt": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "congratulationLetterInfoReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "successfulExamineeAddressListReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "candidateFailedWithPartialPassReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "candidateFailedWithAllSubjectFailReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "subjectPassedListReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "resultSummaryListReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "levelWiseResultSummaryListReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "restOfSubjectListReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "restOfSubjectListReportWithBarcode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "appearedPapers": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "passedPapers": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberOfCompletedSubjectListReport": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "registrationNumberRange": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "registrationNumberFrom": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "registrationNumberTo": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numberOfCompletedSubjects": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "regNo": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
